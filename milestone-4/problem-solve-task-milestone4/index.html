@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .background {
+        background-color: lightblue;
+        height: 100vh;
+        position: relative;
+      }
+
+      .text {
+        position: absolute;
+        font-size: 20px;
+        line-height: 500px;
+        color: blue;
+        text-shadow: 1px 1px white;
+        animation: move 4s linear infinite;
+      }
+
+      @keyframes move {
+        from {
+          transform: translateY(0);
+        }
+
+        to {
+          transform: translateY(-100%);
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="background">
+      <div class="text"></div>
+    </div>
+
+    <script>
+      const charCodeStart = 97;
+      const charCodeEnd = 122;
+      const backgroundElement = document.querySelector('.background');
+
+      for (let i = 0; i < 500; i++) {
+          const charCode = Math.floor(Math.random() * (charCodeEnd - charCodeStart + 1)) + charCodeStart;
+          const character = String.fromCharCode(charCode);
+          const span = document.createElement('span');
+          span.classList.add('text');
+          span.innerHTML = character;
+          span.style.left = ${Math.random() * 100}vw;
+          span.style.animationDelay = ${Math.random() * 4}s;
+          backgroundElement.appendChild(span);
+      }
+    </script>
+  </body>
+</html>
