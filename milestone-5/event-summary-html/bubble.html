@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble</title>
+  </head>
+  <body>
+    <h2>Bubble</h2>
+    <section id="section">
+      <ul id="list">
+        <li id="item-1">Home</li>
+        <li id="item-2">about</li>
+        <li id="item-3">blog</li>
+      </ul>
+    </section>
+    <script>
+      document
+        .getElementById("item-2")
+        .addEventListener("click", function (event) {
+          console.log("item2 click");
+          event.stopImmediatePropagation();
+        });
+      document
+        .getElementById("item-2")
+        .addEventListener("click", function (event) {
+          console.log("item3 click");
+        });
+      document
+        .getElementById("item-2")
+        .addEventListener("click", function (event) {
+          console.log("item4 click");
+        });
+      document
+        .getElementById("item-2")
+        .addEventListener("click", function (event) {
+          console.log("item5 click");
+        });
+      document.getElementById("list").addEventListener("click", function () {
+        console.log("list click");
+      });
+      document.getElementById("section").addEventListener("click", function () {
+        console.log("section click");
+      });
+    </script>
+  </body>
+</html>

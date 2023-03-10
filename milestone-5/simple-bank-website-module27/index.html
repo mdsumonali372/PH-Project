@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My bank deposit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h2 class="text-center text-5xl font-bold mt-12">My Bank Account</h2>
+    <section class="container mx-auto">
+      <div class="bg-slate-400 p-8 w-3/4 mx-auto mt-12">
+        <h3 class="text-center text-3xl font-semibold mb-3">Please Login</h3>
+        <div class="w-80 mx-auto">
+          <input
+            type="email"
+            id="email"
+            class="mb-3 block w-full px-2 py-4 border-0 outline-none rounded-lg"
+            placeholder="Please input your mail"
+          />
+          <input
+            type="password"
+            id="password"
+            class="mb-3 block w-full px-2 py-4 border-0 outline-none rounded-lg"
+            placeholder="Please input your password"
+          />
+          <button
+            id="submit-btn"
+            class="bg-red-400 hover:bg-orange-500 text-2xl font-medium text-right block text-white px-6 py-2 rounded-lg"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

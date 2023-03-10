@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Text Editor</title>
+    <script
+      src="https://kit.fontawesome.com/99b2767ba5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container w-3/4 mx-auto bg-orange-400 p-8 rounded-lg mt-12">
+      <h1 id="h2" class="text-center text-5xl text-white font-bold">
+        My Text Editor
+      </h1>
+      <div class="border border-red-100 bg-slate-400 mt-12">
+        <div class="grid grid-cols-3 gap-4 border-b mx-auto text-center">
+          <div class="">
+            <i id="fontBold" class="fa-solid fa-b ml-4 font-bold"></i>
+            <i id="italic" class="fa-solid fa-italic ml-4 font-bold"></i>
+            <i id="underline" class="fa-solid fa-underline ml-4 font-bold"></i>
+          </div>
+          <div class="">
+            <i
+              id="align-left"
+              class="fa-solid fa-align-left ml-4 font-bold"
+            ></i>
+            <i
+              id="align-center"
+              class="fa-solid fa-align-center ml-4 font-bold"
+            ></i>
+            <i
+              id="align-right"
+              class="fa-solid fa-align-right ml-4 font-bold"
+            ></i>
+          </div>
+          <div class="">
+            <input
+              type="number"
+              id="font-size"
+              class="w-10 bg-slate-400"
+              value="16"
+            />
+
+            <i class="fa-sharp fa-regular fa-font-case"></i>
+
+            <input type="color" id="myColor" />
+          </div>
+        </div>
+        <div>
+          <textarea
+            name=""
+            id="text-editor"
+            class="w-full"
+            cols="100"
+            rows="10"
+            placeholder="Type your text here"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
