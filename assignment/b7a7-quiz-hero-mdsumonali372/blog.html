@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <button
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+        >
+          <a href="index.html">Home</a>
+        </button>
+      </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+    <div class="container mx-auto w-3/4 mt-7">
+      <div class="collapse">
+        <input type="checkbox" class="peer" />
+        <div
+          class="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content text-3xl"
+        >
+          What the difference of map, filter, find and forEach?
+        </div>
+        <div
+          class="collapse-content bg-black text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+        >
+          <p class="mt-2 text-2xl">
+            Map returns new array | Get only element by forEach, none Can't get
+            the return array. any one element according to the condition by
+            find. gets Get all the elements according to the condition by the
+            filter.
+          </p>
+        </div>
+      </div>
+      <div class="collapse mt-4">
+        <input type="checkbox" class="peer" />
+        <div
+          class="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content text-3xl"
+        >
+          What is difference between local storage, session storage and cookies?
+        </div>
+        <div
+          class="collapse-content bg-black text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+        >
+          <p class="mt-2 text-2xl">
+            Local storage is needed to store data that users later to access,
+            such as offline data. Session storage is your web A great way to
+            improve application performance. Cookies Good choice for storing
+            data that should not be kept for a long time, eg session id |
+          </p>
+        </div>
+      </div>
+      <div class="collapse mt-4">
+        <input type="checkbox" class="peer" />
+        <div
+          class="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content text-3xl"
+        >
+          What is an event loop and how does work?
+        </div>
+        <div
+          class="collapse-content bg-black text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+        >
+          <p class="mt-2 text-2xl">
+            Event loop has a simple function - call stack and callback queue
+            monitor If the call stack is empty, the event loop is first from the
+            queue will take the event and push it up the call stack, which It
+            runs effectively. Based on an event loop in JavaScript has a runtime
+            model, which executes code, collects events, and Responsible for
+            executing processing and queuing sub-tasks.
+          </p>
+        </div>
+      </div>
+      <div class="collapse mt-4">
+        <input type="checkbox" class="peer" />
+        <div
+          class="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content text-3xl"
+        >
+          How Does Work quizTimer?
+        </div>
+        <div
+          class="collapse-content bg-black text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+        >
+          <p class="mt-2 text-2xl">
+            How many times the questions are answered by the quizTimer function
+            At that time the countdown works.
+          </p>
+        </div>
+      </div>
+      <div class="collapse mt-4">
+        <input type="checkbox" class="peer" />
+        <div
+          class="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content text-3xl"
+        >
+          How Does Work chooseQuiz?
+        </div>
+        <div
+          class="collapse-content bg-black text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+        >
+          <p class="mt-2 text-2xl">
+            The task of selecting quiz answers by the ChooseQuiz function. For
+            example, Option 1, Option 2, Option 3, Option 4
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+      Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+  </body>
+</html>

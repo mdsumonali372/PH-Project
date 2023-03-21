@@ -1,0 +1,159 @@
+/* small device */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  nav,
+  .menu,
+  .feature-teams-group,
+  .feature-work-group,
+  .awards,
+  .sponsor-logo,
+  .architecture-blogs {
+    flex-direction: column;
+  }
+  .menu {
+    gap: 20px;
+    margin-top: 10%;
+  }
+  .hero-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .hero {
+    padding-top: 65%;
+  }
+  .hero-img {
+    width: 90%;
+    margin: auto;
+  }
+  .feature-teams {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .primary-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .primary-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .feature-work-left-col,
+  .feature-work-right-col,
+  .feature-right-column,
+  .feature-left-column {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+  .feature-work-right-col img {
+    height: 100%;
+  }
+  .feature-work-btn {
+    transform: translate(-85%, 36%);
+  }
+  .feature-work-group {
+    gap: 30px;
+  }
+  .work-btn {
+    font-size: 32px;
+    padding: 3% 24%;
+  }
+  .fact-content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .awards {
+    gap: 16px;
+  }
+  .award-item:hover {
+    transform: scale(1.1);
+  }
+  .sponsor {
+    padding: 20% 0 10%;
+  }
+  .sponsor-logo {
+    gap: 32px;
+  }
+  .sponsor-logo img {
+    width: 50%;
+    margin: auto;
+  }
+  .blog-item {
+    margin: auto;
+    margin-bottom: 5%;
+    width: 90%;
+  }
+  footer {
+    padding-bottom: 50px;
+  }
+  .footer-bg {
+    width: 90% !important;
+  }
+  .footer-bg p {
+    font-size: 16px;
+  }
+}
+/* end small device */
+/* Medium device  */
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+  nav,
+  .menu,
+  .feature-teams-group,
+  .feature-work-group,
+  .awards,
+  .sponsor-logo,
+  .architecture-blogs {
+    flex-direction: column;
+  }
+  .feature-work-left-col,
+  .feature-work-right-col,
+  .fact-content,
+  .hero-img,
+  .feature-left-column,
+  .feature-right-column {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .menu {
+    margin-top: 20px;
+  }
+  .hero {
+    padding-top: 25%;
+  }
+  .feature-work-btn {
+    transform: translate(-50%, 32%);
+  }
+  .work-btn {
+    padding: 15px 45px;
+  }
+  .fact-content {
+    text-align: center;
+  }
+  .awards,
+  .architecture-blogs,
+  .menu,
+  .feature-work-group {
+    gap: 20px;
+  }
+  .sponsor-logo {
+    gap: 40px;
+  }
+
+  .sponsor-logo img {
+    width: 50%;
+    margin: auto;
+  }
+  .blog-item {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .footer-bg {
+    width: 90% !important;
+  }
+}
+/* end Medium device */

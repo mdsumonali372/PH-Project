@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoMetry Genius</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <div class="px-10 mt-8">
+      <div class="navbar bg-[#1090D81A] rounded-lg px-10 py-3">
+        <div class="navbar-start">
+          <a class="normal-case text-4xl text-center font-bold"
+            >Interactive <br />
+            <span class="text-3xl font-medium text-[#df7474]"
+              >Geometry Genius</span
+            ></a
+          >
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-[#1090D8] border-0" href="faq.html">Blog</a>
+        </div>
+      </div>
+    </div>
+    <!-- // end nav bar -->
+    <main class="px-12 mt-10 mb-10">
+      <div class="md:flex gap-6">
+        <div
+          id="card-parent"
+          class="grid grid-cols-1 md:grid-cols-3 w-full md:w-[70%] gap-3"
+        >
+          <!-- tringle  -->
+          <div class="border-2 rounded-lg p-12">
+            <div class="text-center">
+              <div class="h-[20vh]">
+                <img
+                  src="images/triangle.png"
+                  class="mx-auto h-full w-full"
+                  alt=""
+                />
+              </div>
+              <h2
+                id="tringle-name"
+                class="text-2xl text-[#414141] font-bold mt-12"
+              >
+                Triangle
+              </h2>
+              <p class="mt-2 text-sm text-[#414141] font-normal">
+                Area (A) = 0.5 X b X h
+              </p>
+              <div class="flex items-center mt-5">
+                <input
+                  id="tringle-b-input"
+                  type="text"
+                  placeholder="b"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3 mr-3">cm</label>
+                <input
+                  id="tringle-h-input"
+                  type="text"
+                  placeholder="h"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3">cm</label>
+              </div>
+              <button id="triangle-btn" class="btn bg-[#1090D8] border-0 mt-4">
+                Calculate
+              </button>
+            </div>
+          </div>
+          <!-- rectingle -->
+          <div class="border-2 rounded-lg p-12">
+            <div class="text-center">
+              <div class="h-[20vh]">
+                <img
+                  src="images/rectangle.png"
+                  class="mx-auto h-full w-full"
+                  alt=""
+                />
+              </div>
+              <h2
+                id="rectingle-name"
+                class="text-2xl text-[#414141] font-bold mt-12"
+              >
+                Rectangle
+              </h2>
+              <p class="mt-2 text-sm text-[#414141] font-normal">
+                Area (A) = w X l
+              </p>
+              <div class="flex items-center mt-5">
+                <input
+                  id="rectangle-w-input"
+                  type="text"
+                  placeholder="w"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3 mr-3">cm</label>
+                <input
+                  id="rectangle-l-input"
+                  type="text"
+                  placeholder="l"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3">cm</label>
+              </div>
+              <button id="rectangle-btn" class="btn bg-[#1090D8] border-0 mt-4">
+                Calculate
+              </button>
+            </div>
+          </div>
+          <!-- Parallelogram  -->
+          <div class="border-2 rounded-lg p-12">
+            <div class="text-center">
+              <div class="h-[20vh]">
+                <img
+                  src="images/parallelogram.png"
+                  class="mx-auto h-full w-full"
+                  alt=""
+                />
+              </div>
+              <h2
+                id="parallelogram-name"
+                class="text-2xl text-[#414141] font-bold mt-12"
+              >
+                Parallelogram
+              </h2>
+              <p class="mt-2 text-sm text-[#414141] font-normal">
+                Area (A) = b X h
+              </p>
+              <div class="flex items-center mt-5">
+                <input
+                  id="parallelogram-b-input"
+                  type="text"
+                  placeholder="b"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3 mr-3">cm</label>
+                <input
+                  id="parallelogram-h-input"
+                  type="text"
+                  placeholder="h"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3">cm</label>
+              </div>
+              <button
+                id="parallelogram-btn"
+                class="btn bg-[#1090D8] border-0 mt-4"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+          <!-- Rhombus -->
+          <div class="border-2 rounded-lg p-12">
+            <div class="text-center">
+              <div class="h-[20vh]">
+                <img
+                  src="images/rhombus.png"
+                  class="mx-auto h-full w-full"
+                  alt=""
+                />
+              </div>
+              <h2
+                id="rhombus-name"
+                class="text-2xl text-[#414141] font-bold mt-12"
+              >
+                Rhombus
+              </h2>
+              <p class="mt-2 text-sm text-[#414141] font-normal">
+                Area (A) = 0.5 X d1 X d2
+              </p>
+              <div class="flex items-center mt-5">
+                <input
+                  id="rhombus-d1-input"
+                  type="text"
+                  placeholder="d1"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3 mr-3">cm</label>
+                <input
+                  id="rhombus-d2-input"
+                  type="text"
+                  placeholder="d2"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3">cm</label>
+              </div>
+              <button id="rhombus-btn" class="btn bg-[#1090D8] border-0 mt-4">
+                Calculate
+              </button>
+            </div>
+          </div>
+          <!-- Pentagon  -->
+          <div class="border-2 rounded-lg p-12">
+            <div class="text-center">
+              <div class="h-[20vh]">
+                <img
+                  src="images/pentagon.png"
+                  class="mx-auto h-full w-full"
+                  alt=""
+                />
+              </div>
+              <h2
+                id="pentagon-name"
+                class="text-2xl text-[#414141] font-bold mt-12"
+              >
+                Pentagon
+              </h2>
+              <p class="mt-2 text-sm text-[#414141] font-normal">
+                Area (A) = 0.5 X p X b
+              </p>
+              <div class="flex items-center mt-5">
+                <input
+                  id="pentagon-p-input"
+                  type="text"
+                  placeholder="p"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3 mr-3">cm</label>
+                <input
+                  id="pentagon-b-input"
+                  type="text"
+                  placeholder="b"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3">cm</label>
+              </div>
+              <button id="pentagon-btn" class="btn bg-[#1090D8] border-0 mt-4">
+                Calculate
+              </button>
+            </div>
+          </div>
+          <!-- Ellipse -->
+          <div class="border-2 rounded-lg p-12">
+            <div class="text-center">
+              <div class="h-[20vh]">
+                <img
+                  src="images/ellipse.png"
+                  class="mx-auto h-full w-full"
+                  alt=""
+                />
+              </div>
+              <h2
+                id="ellipse-name"
+                class="text-2xl text-[#414141] font-bold mt-12"
+              >
+                Ellipse
+              </h2>
+              <p class="mt-2 text-sm text-[#414141] font-normal">
+                Area (A) = πab
+              </p>
+              <div class="flex items-center mt-5">
+                <input
+                  id="ellipse-a-input"
+                  type="text"
+                  placeholder="a"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3 mr-3">cm</label>
+                <input
+                  id="ellipse-b-input"
+                  type="text"
+                  placeholder="b"
+                  class="input input-bordered w-full max-w-xs bg-[#F1F1F1]"
+                />
+                <label for="" class="font-normal ml-3">cm</label>
+              </div>
+              <button id="ellipse-btn" class="btn bg-[#1090D8] border-0 mt-4">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-[30%] mt-8 md:mt-0">
+          <h2 class="text-2xl underline font-bold text-center">
+            Area Calculation
+          </h2>
+          <div class="overflow-x-auto">
+            <table class="table w-full">
+              <!-- head -->
+              <thead>
+                <!-- <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr> -->
+              </thead>
+              <tbody id="tbody">
+                <!-- <tr>
+                  <th>3</th>
+                  <td>Triangle</td>
+                  <td>12cm</td>
+                  <td><button class="btn">Button</button></td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/function.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

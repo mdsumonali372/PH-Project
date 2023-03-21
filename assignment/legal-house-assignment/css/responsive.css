@@ -1,0 +1,13 @@
+@media screen and (max-width: 767px) {
+  .content-width {
+    width: 100% !important;
+  }
+  .slider img {
+    height: 65vh;
+  }
+  .practice-item {
+    border-bottom: 1px solid #e7e7e7 !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+}

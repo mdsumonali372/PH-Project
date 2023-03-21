@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* font-family: 'EB Garamond', serif;
+font-family: 'Poppins', sans-serif; */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "EB Garamond", serif;
+  font-weight: 800;
+  color: #414040;
+}
+p {
+  color: #707070;
+}
+/* common css */
+.bg-color {
+  background: #f3f3f3;
+}
+.footer-color {
+  color: #cfcfcf;
+}
+.practice,
+.client,
+.faq,
+.contact,
+footer,
+address,
+.partner {
+  margin-top: 120px;
+}
+/* banner part */
+.hero-banner {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  padding: 104px 0;
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, #111111 100%);
+}
+/* end banner part */
+/* pratice part */
+.practice-item {
+  padding: 70px;
+}
+.practice-icon {
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  background: #b68c5a;
+  border-radius: 50px;
+}
+.practice-item:hover {
+  background: linear-gradient(180deg, #f3f3f3 0%, rgba(243, 243, 243, 0) 100%);
+  border: 1px solid #e7e7e7;
+}
+/* end practice part */
+/* client part */
+.slide-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+.slider img {
+  filter: brightness(0.3);
+  height: 70vh;
+}
+.carousel-caption.slide-info {
+  top: 25%;
+}
+/*  end client */
+/* faq part */
+.accordion-bg {
+  border-radius: 8px;
+}
+.accordion-bg:focus,
+.accordion-bg {
+  outline: none;
+  box-shadow: none;
+}
+.faq-margin {
+  margin-bottom: 30px;
+}
+/* end faq part */
+/* contact */
+.input-item:focus {
+  box-shadow: none;
+  border: none;
+  background: #f3f3f3;
+}
+/* end contact */
+/* footer */
+footer {
+  padding: 120px 0;
+}
+/* end footer */
